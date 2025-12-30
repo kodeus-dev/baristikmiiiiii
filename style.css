@@ -1,0 +1,81 @@
+/* Tüm elementlerde margin ve padding sıfırla */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body ayarları */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* tam beyaz */
+    font-family: 'Comic Neue', "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+}
+
+/* Container */
+.container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+/* GIF */
+.gif {
+    display: block;
+    height: auto;
+}
+
+/* GIF’in üstündeki yazı */
+.overlay-text {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    color: #000000;
+    font-size: 36px;
+    font-family: 'Comic Neue', "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    white-space: nowrap;
+}
+
+/* GIF’in altındaki yazı */
+.under-text {
+    font-size: 28px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    font-family: 'Comic Neue', "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+    margin-top: 10px;
+}
+
+/* Butonlar */
+.buttons {
+    margin-top: 15px;
+}
+
+button {
+    font-family: 'Comic Neue', "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+    font-size: 18px;
+    padding: 8px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 2px solid #ff5555;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff5555;
+    color: #fff;
+}
+
+/* Oleyyyyy yazısı */
+#celebration {
+    margin-top: 20px;
+    color: #28a745;
+    font-size: 32px;
+    font-family: 'Comic Neue', "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+}
